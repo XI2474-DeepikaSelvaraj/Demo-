@@ -1,4 +1,17 @@
 # API RESPONSE FOR GIS AND DMS
+```http
+GET /api/campaigns/?api_key=12345678901234567890123456789012
+```
+
+
+```javascript
+{
+  "message" : string,
+  "success" : bool,
+  "data"    : string
+}
+```
+
 
 1.{base url}/health
      Successful Response:
@@ -8,6 +21,7 @@
       "fiveGCount"
       "postGisVersion"
     }
+  -----  
 2. {base url}/import/odb
     Request - Import the .kmz file
     Success Response:
@@ -18,6 +32,7 @@
      {  "code": 
         "message": 
      }
+   ------  
 3. {base url}/import/5g   
      Request - Import the .kmz file
     Success Response:
@@ -28,6 +43,7 @@
      {  "code": 
         "message": 
      }
+     --------
 4.{base url}/odb/{yx}   
     Request :Input the lon and lat value separated by comma along with provider and type 
     Successful Response:
@@ -43,6 +59,7 @@
  "ports_total" 
  "ports_used"
  }
+ ------
  Failure Response:
      {  "code": 
         "message": 
