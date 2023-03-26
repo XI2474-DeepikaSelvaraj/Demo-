@@ -25,6 +25,7 @@ GET /api/campaigns/?api_key=12345678901234567890123456789012
       "postGisVersion"
     }
    ```
+   
 ```http    
 2. {base url}/import/odb
 ```
@@ -39,11 +40,12 @@ GET /api/campaigns/?api_key=12345678901234567890123456789012
       
      
    ## Failure Response:
-     ```javascript
+    
+   ```javascript
      {  "code": 
         "message": 
      }
-     ```
+   ```
 
 3. {base url}/import/5g   
      Request - Import the .kmz file
