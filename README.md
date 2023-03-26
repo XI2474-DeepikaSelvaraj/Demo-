@@ -83,9 +83,10 @@ GET /{base url}/odb/{yx}
         "message": 
      } 
    ```  
-```http     
- GET /{base url}/5g/{yx}
-``` 
+
+```http        
+GET /{base url}/5g/{yx}  
+```
   ## Request :Input the lon and lat value separated by comma 
   ### Successful Response:
   
