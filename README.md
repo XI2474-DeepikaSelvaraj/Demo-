@@ -17,7 +17,7 @@ GET /{base url}/health
    
 
 ```http    
-POST/{base url}/import/odb
+POST /{base url}/import/odb
 ```
    ## Request - Import the .kmz file
    ### Success Response:
@@ -38,7 +38,7 @@ POST/{base url}/import/odb
    ```
 
 ```http    
-POST/{base url}/fiveg/odb
+POST /{base url}/fiveg/odb
 ``` 
    ## Request - Import the .kmz file
    ### Success Response:
@@ -56,9 +56,9 @@ POST/{base url}/fiveg/odb
      }
    ```
 ```http        
-GET/{base url}/odb/{yx}  
+GET /{base url}/odb/{yx}  
 ```
-  ##  Request :Input the lon and lat value separated by comma along with provider and type 
+  ###  Request :Input the lon and lat value separated by comma along with provider and type 
   ###  Successful Response:
   
    ```javascript
@@ -84,10 +84,10 @@ GET/{base url}/odb/{yx}
      } 
    ```  
 ```http     
- 5.{base url}/5g/{yx}
+ GET /{base url}/5g/{yx}
 ``` 
   ## Request :Input the lon and lat value separated by comma 
-  ## Successful Response:
+  ### Successful Response:
   
   ```javascript
    {
@@ -105,7 +105,7 @@ GET/{base url}/odb/{yx}
   ]
   } 
  ```   
- ## Failure Response:
+ ### Failure Response:
   
   ```javascript
      {  "code": 
