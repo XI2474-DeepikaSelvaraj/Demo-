@@ -1,23 +1,12 @@
 # API RESPONSE FOR GIS AND DMS
-```http
-GET /api/campaigns/?api_key=12345678901234567890123456789012
-```
 
-
-```javascript
-{
-  "message" : string,
-  "success" : bool,
-  "data"    : string
-}
-```
 
 ```http
 1.{base url}/health
 ```
- ## successful Response:
+ ### successful Response:
     
-    ```javascript
+   ```javascript
      {
       "status"
       "odbCount"
@@ -26,11 +15,12 @@ GET /api/campaigns/?api_key=12345678901234567890123456789012
     }
    ```
    
+
 ```http    
 2. {base url}/import/odb
 ```
    ## Request - Import the .kmz file
-   ## Success Response:
+   ### Success Response:
    
    ```javascript
      {  "data":   
@@ -39,7 +29,7 @@ GET /api/campaigns/?api_key=12345678901234567890123456789012
    ```
       
      
-   ## Failure Response:
+   ### Failure Response:
     
    ```javascript
      {  "code": 
