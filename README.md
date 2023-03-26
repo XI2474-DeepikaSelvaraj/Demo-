@@ -15,7 +15,8 @@ GET /api/campaigns/?api_key=12345678901234567890123456789012
 ```http
 1.{base url}/health
 ```
-    ## Successful Response:
+ ## successful Response:
+    
     ```javascript
      {
       "status"
@@ -23,19 +24,22 @@ GET /api/campaigns/?api_key=12345678901234567890123456789012
       "fiveGCount"
       "postGisVersion"
     }
-    ```
+   ```
 ```http    
 2. {base url}/import/odb
 ```
    ## Request - Import the .kmz file
    ## Success Response:
-    ```javascript
+   
+   ```javascript
      {  "data":   
         "status": 
      }
-      ```
-      ```javascript
-     Failure Response:
+   ```
+      
+     
+   ## Failure Response:
+     ```javascript
      {  "code": 
         "message": 
      }
