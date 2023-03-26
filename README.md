@@ -2,7 +2,7 @@
 
 
 ```http
-1.{base url}/health
+GET /{base url}/health
 ```
  ### successful Response:
     
@@ -17,7 +17,7 @@
    
 
 ```http    
-2. {base url}/import/odb
+POST/{base url}/import/odb
 ```
    ## Request - Import the .kmz file
    ### Success Response:
@@ -37,41 +37,59 @@
      }
    ```
 
-3. {base url}/import/5g   
-     Request - Import the .kmz file
-    Success Response:
+```http    
+POST/{base url}/fiveg/odb
+``` 
+   ## Request - Import the .kmz file
+   ### Success Response:
+   
+   ```javascript
      {  "data":   
         "status": 
      }
-     Failure Response:
+   ```
+   ### Failure Response:
+  
+   ```javascript
      {  "code": 
         "message": 
      }
-     --------
-4.{base url}/odb/{yx}   
-    Request :Input the lon and lat value separated by comma along with provider and type 
-    Successful Response:
+   ```
+```http        
+GET/{base url}/odb/{yx}  
+```
+  ##  Request :Input the lon and lat value separated by comma along with provider and type 
+  ###  Successful Response:
+  
+   ```javascript
     {  "id": 
-  "name"
-  "Mobily"
-  "location": {   
-  "x":     
-  "y": 
+    "name"
+   "Mobily"
+   "location": {   
+   "x":     
+   "y": 
       }  
- "distance"  
- "isWithin20M" 
- "ports_total" 
- "ports_used"
- }
- ------
- Failure Response:
+  "distance"  
+  "isWithin20M" 
+  "ports_total" 
+  "ports_used"
+  }
+  ```
+ 
+ ### Failure Response:
+ 
+   ```javascript
      {  "code": 
         "message": 
      } 
-     
+   ```  
+```http     
  5.{base url}/5g/{yx}
-  Request :Input the lon and lat value separated by comma 
-  Successful Response:
+``` 
+  ## Request :Input the lon and lat value separated by comma 
+  ## Successful Response:
+  
+  ```javascript
    {
   "id":
 "strength":
@@ -86,8 +104,12 @@
     } 
   ]
   } 
- Failure Response:
+ ```   
+ ## Failure Response:
+  
+  ```javascript
      {  "code": 
         "message": 
      } 
+   ```  
   
